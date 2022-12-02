@@ -246,6 +246,7 @@ router.post("/tmsaroutedata", async (req, res) => {
   }
 });
 
+//Add this route, to receive transmilenio publications 
 router.post("/tmsadata", async (req, res) => {
   let query = parseInt(req.body.msgkind);
   if (query >= 0) {
